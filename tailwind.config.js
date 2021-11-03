@@ -2,13 +2,13 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    backgroundColor: (theme) => ({
-      ...theme('colors'),
-      primary: '#880E4F',
-    }),
     extend: {
+      colors: {
+        primary: '#880E4F',
+        secondary: '#D7D7D7',
+      },
       fontFamily: {
-        body: ['Cairo'],
+        primary: ['Cairo', 'sans-serif'],
       },
     },
   },
